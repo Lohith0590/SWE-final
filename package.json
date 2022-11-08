@@ -1,0 +1,57 @@
+{
+  "name": "snarling-hidden-goose",
+  "version": "1.0.0",
+  "private": true,
+  "dependencies": {
+    "@craco/craco": "^6.4.3",
+    "@emotion/react": "^11.10.5",
+    "@emotion/styled": "^11.10.5",
+    "@material-ui/core": "^4.12.4",
+    "@material-ui/icons": "^4.11.3",
+    "@mui/icons-material": "^5.10.9",
+    "@mui/material": "^5.10.12",
+    "@progress/kendo-data-query": "^1.6.0",
+    "@progress/kendo-drawing": "^1.17.2",
+    "@progress/kendo-licensing": "^1.2.2",
+    "@progress/kendo-react-animation": "^5.9.0",
+    "@progress/kendo-react-buttons": "^5.9.0",
+    "@progress/kendo-react-common": "^5.9.0",
+    "@progress/kendo-react-data-tools": "^5.9.0",
+    "@progress/kendo-react-dateinputs": "^5.9.0",
+    "@progress/kendo-react-dropdowns": "^5.9.0",
+    "@progress/kendo-react-inputs": "^5.9.0",
+    "@progress/kendo-react-intl": "^5.9.0",
+    "@progress/kendo-react-treeview": "^5.9.0",
+    "@progress/kendo-theme-default": "^5.10.0",
+    "framer-motion": "^4.1.17",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-helmet": "^6.1.0",
+    "react-router-dom": "^5.2.0",
+    "react-slide-button": "^1.0.2",
+    "react-slider": "^2.0.4",
+    "rsuite": "^5.22.0",
+    "speedux": "^5.1.5"
+  },
+  "scripts": {
+    "start": "craco start",
+    "build": "craco build",
+    "test": "craco test --env=jsdom",
+    "eject": "craco eject"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "react-scripts": "^5.0.1"
+  }
+}

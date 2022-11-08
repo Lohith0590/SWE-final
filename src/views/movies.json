@@ -1,0 +1,59 @@
+[
+    {
+        "name": "Pokiri",
+        "year": "2007",
+        "genre": "thriller",
+        "rating": 10,
+        "poster": "http://4.bp.blogspot.com/-Xr7nF9SoDsM/W4BzhyueDVI/AAAAAAAAA34/vzadHc90BSETRPwqeAzSBfLKkBl2a2OIQCK4BGAYYCw/s1600/1014985_478025615610421_1577222572_o.jpg",
+        "desc":"Pook"
+    },
+    {
+        "name": "Dookudu",
+        "year": "2012",
+        "genre": "action",
+        "rating": 7,
+        "poster": "https://m.media-amazon.com/images/M/MV5BNzc2MDcyZjYtZTc1ZS00Mzg0LWEzMDAtZTIyMGNiY2M2ZjFhXkEyXkFqcGdeQXVyNjQ1MDcxNzM@._V1_.jpg",
+        "desc":"dook"
+    },
+    {
+        "name": "Khaleja",
+        "year": "2014",
+        "genre": "action",
+        "rating": 9,
+        "poster": "https://static.toiimg.com/thumb/msid-78528924,imgsize-1013932,width-800,height-600,resizemode-75/78528924.jpg",
+        "desc":" Khaleja Hello"
+    },
+    {
+        "name": "Athadu",
+        "year": "2008",
+        "genre": "bumper",
+        "rating": 10,
+        "poster": "https://img1.hotstarext.com/image/upload/f_auto,t_hcdl/sources/r1/cms/prod/old_images/MOVIE/5940/1000055940/1000055940-h",
+        "desc":"Athadu desc"
+    },
+    {
+        "name": "SVSC",
+        "year": "2012",
+        "genre": "family",
+        "rating": 1,
+        "poster": "https://etv-win-image.akamaized.net/etvwin/telugumovies/seethammavakitlosirimallechettu/84939/seethamma-vakitlo-sirimalle-chettu-SVSC_Movie-320x240.jpg",
+        "desc":"SVSC Hello"
+    },
+    {
+        "name": "Spyder",
+        "year": "2018",
+        "genre": "thriller",
+        "rating": 5,
+        "poster": "https://www.miindia.com/miimages/events/sep17/spyder-movie-tamil.jpg",
+        "desc":"Spider"
+    },
+    {
+        "name": "Akhanda",
+        "year": "2021",
+        "genre": "horror",
+        "rating": 4,
+        "poster": "https://www.nowrunning.com/content/movie/2021/bb3-25054/bg1.jpg",
+        "desc":"Akhanda desc"
+    }
+   
+]
