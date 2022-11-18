@@ -49,9 +49,14 @@ const Home = (props) => {
 
       
       
+<div className='dropdown'>
+<DropDownList data={categories} onChange={e => setCategory(e.value) } placeholder="select a game" />
 
-<DropDownList data={categories} onChange={e => setCategory(e.value)} />
-<div style={{ width: 500,height:100, marginLeft: 20,marginTop:100 }}>
+
+
+
+
+<div style={{ width: 300,height:100, marginLeft: 320,marginTop:-40}}>
       <Slider
         min={0}
         max={labels.length - 1}
@@ -69,6 +74,7 @@ const Home = (props) => {
         handleTitle={labels[rating]}
         onChange={setRating}
       />
+    </div>
     </div>
 
     
@@ -93,8 +99,8 @@ const Home = (props) => {
         <div className="grid-item" onMouseOver={HandleClick} onMouseLeave={HandleOut}>
             <p>{movie.name}</p>
             <img src={movie.poster}></img>
-             {isOpen && 
-              (<div>{movie.desc}</div>)}
+             {/* {isOpen && 
+              (<div>{movie.desc}</div>)} */}
             
             </div>
         )}
