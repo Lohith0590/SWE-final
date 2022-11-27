@@ -7,7 +7,6 @@ import VideoBox from './videobox'
 import { Slider } from 'rsuite';
 import './home.css'
 import movies from './movies.json'
-import { setSeconds } from 'rsuite/esm/utils/dateUtils';
 
 
 
@@ -21,11 +20,8 @@ const Home = (props) => {
   const [rating, setRating] = React.useState(0);
   const [category, setCategory] = useState(""); 
   const [isOpen,setisOpen]=useState(false);
-  const [lang, setLang]= useState("");
   const HandleClick=()=>{setisOpen(true);}
-  
-  const btn = document.querySelector('#btn');        
-
+  const HandleOut=()=>{setisOpen(false);}
  
 
   return (
@@ -53,16 +49,9 @@ const Home = (props) => {
 
       
       
-<div className='dropdown'>
-  <h1>Genre:</h1>
-<DropDownList data={categories} onChange={e => setCategory(e.value) } placeholder="select a game" />
 
-
-
-
-
-<div style={{ width: 300,height:100, marginLeft: 320,marginTop:-90}}>
-  <h1>Rating:</h1>
+<DropDownList data={categories} onChange={e => setCategory(e.value)} />
+<div style={{ width: 500,height:100, marginLeft: 20,marginTop:100 }}>
       <Slider
         min={0}
         max={labels.length - 1}
@@ -81,40 +70,6 @@ const Home = (props) => {
         onChange={setRating}
       />
     </div>
-    </div>
-
-<div className='Rad' onChange={e => setLang(e.name)}>
-<h1>Language:</h1>
-<label class="container">English
-  <input type="radio" name="option" value="english"></input>
-  <span class="checkmark"></span>
-</label>
-<label class="container">Hindi
-  <input type="radio" name="option" value="hindi"></input>
-  <span class="checkmark"></span>
-</label>
-<label class="container">Telugu
-  <input type="radio" name="option" value="telugu"></input>
-  <span class="checkmark"></span>
-</label>
-</div>
-
-
-<div className='Rad' style={{  marginLeft: 320,marginTop:0}}>
-<h1>Type:</h1>
-<label class="container">TV Show
-  <input type="radio" name="radio"></input>
-  <span class="checkmark"></span>
-</label>
-<label class="container">Movie
-  <input type="radio" name="radio"></input>
-  <span class="checkmark"></span>
-</label>
-</div>
-
-
-
-
 
     
 
@@ -135,10 +90,11 @@ const Home = (props) => {
         .filter((movie)=>movie.rating >= rating)
         .filter((movie)=>movie.genre.toLowerCase().indexOf(category.toLowerCase())>-1)
         .map((movie)=>
-        <div className="grid-item" onClick={HandleClick}>
+        <div className="grid-item" onMouseOver={HandleClick} onMouseLeave={HandleOut}>
             <p>{movie.name}</p>
             <img src={movie.poster}></img>
-            {/* <a href="secondpage.js" className="details">Details&gt;&gt;</a> */}
+             {isOpen && 
+              (<div>{movie.desc}</div>)}
             
             </div>
         )}
